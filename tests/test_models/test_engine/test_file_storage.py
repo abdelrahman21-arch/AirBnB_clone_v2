@@ -1,9 +1,13 @@
 #!/usr/bin/python3
 """Defines unnittests for models/engine/file_storage.py."""
+import sys
+sys.path.append('../../..')
+
 import os
 import json
 import pep8
 import unittest
+import models
 from datetime import datetime
 from models.base_model import BaseModel
 from models.user import User

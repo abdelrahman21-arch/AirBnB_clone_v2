@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 """Defines unnittests for models/engine/db_storage.py."""
+import sys
+sys.path.append('../../..')
+
+
 import pep8
 import models
 import MySQLdb
