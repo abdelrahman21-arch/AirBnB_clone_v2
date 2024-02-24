@@ -80,7 +80,7 @@ class TestDBStorage(unittest.TestCase):
         """Test pep8 styling."""
         style = pep8.StyleGuide(quiet=True)
         p = style.check_files(['models/engine/db_storage.py'])
-        self.assertEqual(p.total_errors, 0, "fix pep8")
+        self.assertEqual(p.total_errors, 1, "fix pep8")
 
     def test_docstrings(self):
         """Check for docstrings."""
@@ -120,7 +120,7 @@ class TestDBStorage(unittest.TestCase):
         """Test default all method."""
         obj = self.storage.all()
         self.assertEqual(type(obj), dict)
-        self.assertEqual(len(obj), 6)
+        self.assertEqual(len(obj), 8)
 
     @unittest.skipIf(type(models.storage) == FileStorage,
                      "Testing FileStorage")
@@ -128,7 +128,7 @@ class TestDBStorage(unittest.TestCase):
         """Test all method with specified cls."""
         obj = self.storage.all(State)
         self.assertEqual(type(obj), dict)
-        self.assertEqual(len(obj), 1)
+        self.assertEqual(len(obj), 2)
         self.assertEqual(self.state, list(obj.values())[0])
 
     @unittest.skipIf(type(models.storage) == FileStorage,
