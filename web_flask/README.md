@@ -29,6 +29,6 @@ screenshots:
 </p>
 
 <p align="center">
-  <img src="https://github.com/abdelrahman21-arch/AirBnB_clone_v2/blob/master/assets/hbnb_screenshot_0.png"
+  <img src="https://github.com/abdelrahman21-arch/AirBnB_clone_v2/blob/master/assets/hbnb_screenshot_1.png"
        alt="HolbertonBnB logo">
 </p>
