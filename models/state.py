@@ -7,6 +7,7 @@ from models.base_model import BaseModel
 from sqlalchemy import String
 from sqlalchemy import Column
 from sqlalchemy.orm import relationship
+from models.city import City
 
 class State(BaseModel, Base):
     """Represents a state for a MySQL database.
